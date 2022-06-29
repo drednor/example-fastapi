@@ -26,7 +26,7 @@ app.include_router(vote.router)
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to abhishek api. Check out /docs to try out this api"}
+    return {"message": "Welcome to abhishek api. Check out /docs to try out this api. Successfully deployed from CI/CD pipeline"}
 
 
 
