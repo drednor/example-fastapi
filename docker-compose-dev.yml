@@ -20,6 +20,8 @@ services:
       - ACCESS_TOKEN_EXPIRE_MINUTES=30
   postgres:
     image: postgres
+    ports:
+        - 5432:5432
     environment:
         - POSTGRES_PASSWORD=password123
         - POSTGRES_DB=fastapi
